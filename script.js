@@ -129,7 +129,9 @@ function formatProjects(filteredProjects) {
     }" class="screenshot" />
        
         <div class="projectText"> ${descriptionHTML}
-        <p class="techStack">Tech Stack: ${project.skills.join(", ")}</p></div>
+        <p><span id="tech-stack">Tech Stack:</span> <span id="skills-list"> ${project.skills.join(
+          ", "
+        )}</span></p></div>
         
       </div>
     `;
