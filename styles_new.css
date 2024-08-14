@@ -21,7 +21,9 @@ li {
 }
 
 h2 {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  ;
   margin-bottom: 0.5rem;
 }
 
@@ -423,13 +425,24 @@ skew to change the 'thickness' of the glitch.*/
 }
 
 .filters {
-  display: flex;
-  justify-content: flex-end;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+
+  padding-bottom: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px dotted black;
 }
 
 .filters,
 .filters p {
   font-size: 0.8rem
+}
+
+.skill-filter {
+  grid-column: 1;
+  grid-row: 1;
 }
 
 optgroup {
