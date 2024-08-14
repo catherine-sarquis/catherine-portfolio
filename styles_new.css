@@ -311,6 +311,7 @@ skew to change the 'thickness' of the glitch.*/
   flex-direction: row;
   justify-content: space-between;
   border: 4px solid var(--orange);
+  padding: 0.5rem;
 }
 
 .socials a {
