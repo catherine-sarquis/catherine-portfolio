@@ -103,12 +103,10 @@
           fun buttons:</p>
 
         <div class="filters">
-          <div>
-
-
+          <div id="skill-filter-container">
             <label for="skill-filter">Filter by<span class="handwriting">&nbsp;skill:&nbsp;</span></label>
 
-            <select id="skill-filter">
+            <select class="skill-filter">
               <option value="">pick a skill</option>
               <hr />
               <optgroup label="Front-end">
@@ -126,9 +124,10 @@
               </optgroup>
             </select>
           </div>
-
-          <p>&nbsp;or&nbsp;</p>
-          <button id="allSkillsBtn">view all skills</button>
+          <div id="allSkillBtnContainer">
+            <p>or you can simply &nbsp;</p>
+            <button id="allSkillsBtn">view all skills</button>
+          </div>
         </div>
 
         <div id="filters-display">
