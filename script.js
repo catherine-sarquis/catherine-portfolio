@@ -18,7 +18,11 @@ async function getAffirmation() {
 
     const affirmation = affirmationsData[randomIndex].text;
 
-    alert(affirmation);
+    affirmationText = document.querySelector(
+      "#affirmationsBtn > p:nth-child(1)"
+    );
+
+    affirmationText.textContent = affirmation;
   } catch (error) {
     console.error("Error fetching or processing affirmations:", error);
     alert(
