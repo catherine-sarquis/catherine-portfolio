@@ -260,6 +260,34 @@ optgroup {
   font-size: 0.9rem;
 }
 
+.all-skills-display {
+  background-color: var(--green);
+  color: white;
+  padding: 0.5rem;
+}
+
+.all-skills-display h3 {
+  font-family: logic-monoscript, mono;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.all-skills-display h4,
+.all-skills-display ul {
+  font-family: logic-monospace, mono;
+  font-size: 1rem;
+}
+
+.skill-category {
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  border-bottom: 1px solid var(--bright-pink);
+}
+
+.skill-category:last-of-type {
+  border-bottom: none;
+}
+
 .hide {
   display: none;
 }
