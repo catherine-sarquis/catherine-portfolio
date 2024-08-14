@@ -303,7 +303,7 @@ skew to change the 'thickness' of the glitch.*/
 }
 
 .socials {
-  /* font-size: 1rem; */
+
   font-family: good-times, sans-serif;
   font-weight: 900;
   font-style: normal;
@@ -315,6 +315,10 @@ skew to change the 'thickness' of the glitch.*/
   border: 4px solid var(--orange);
   height: 50px;
   padding: 0.5rem;
+}
+
+.socials p {
+  font-size: 0.6rem;
 }
 
 .socials a {
