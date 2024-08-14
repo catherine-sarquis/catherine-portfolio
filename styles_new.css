@@ -147,9 +147,10 @@ section {
   font-size: 0.8rem
 }
 
-.skill-filter {
+#skill-filter-container {
   grid-column: 1;
   grid-row: 1;
+  margin-bottom: 0.5rem;
 }
 
 optgroup {
@@ -168,6 +169,18 @@ optgroup {
   border-radius: 4px;
   padding-left: 0.5rem;
   margin-right: 0.5rem;
+}
+
+#allSkillBtnContainer {
+  grid-column: 1;
+  grid-row: 2;
+  display: flex;
+  align-items: center;
+}
+
+#allSkillsBtn {
+  width: 6rem;
+  padding-right: 0.5rem;
 }
 
 .filters-display {

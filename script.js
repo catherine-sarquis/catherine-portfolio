@@ -63,7 +63,7 @@ async function getProjectsBySkill(selectedSkill) {
     // Show the projects display and hide the skills display
     displayArea.classList.remove("hide");
     skillsDisplay.classList.add("hide");
-    allSkillsBtn.textContent = "View All Skills";
+    allSkillsBtn.textContent = "view all skills";
   } catch (error) {
     console.error("Error fetching or processing projects:", error);
     alert("An error occurred while fetching projects. Please try again later.");
