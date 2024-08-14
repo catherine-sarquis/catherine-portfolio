@@ -6,7 +6,7 @@
     "figmaLink": "https://figma.com/file/project1",
     "screenshot": "assets/hummingbirdProject/statusList.png",
     "description": [
-      "Hummingbird is my team's capstone project for the School of Code bootcamp. It's a full-stack web app for monitoring third-party service health."
+      "A full-stack web app for monitoring third-party service health."
     ],
     "skills": [
       "Next.js",
