@@ -1,3 +1,34 @@
+// FOR THE AFFIRMATIONS BUTTON
+const affirmationsBtn = document.getElementById("affirmationsBtn");
+
+// add an event listener to the button
+affirmationsBtn.addEventListener("click", getAffirmation);
+
+// function to get an affirmation
+async function getAffirmation() {
+  try {
+    const response = await fetch("affirmations.json");
+    if (!response.ok) {
+      throw new Error("HTTP-Error: " + response.status);
+    }
+
+    const affirmationsData = await response.json();
+
+    const randomIndex = Math.floor(Math.random() * affirmationsData.length);
+
+    const affirmation = affirmationsData[randomIndex].text;
+
+    alert(affirmation);
+  } catch (error) {
+    console.error("Error fetching or processing affirmations:", error);
+    alert(
+      "An error occurred while fetching affirmations. Please try again later."
+    );
+  }
+}
+
+// FOR THE SKILLS BUTTON
+
 const allSkillsBtn = document.getElementById("allSkillsBtn");
 const skillsDisplay = document.querySelector(".all-skills-display");
 const displayArea = document.querySelector(".projects-display");
