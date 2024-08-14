@@ -94,30 +94,34 @@
     <section class="skills-and-projects">
       <div class="padding-colour">
         <h2>My Learning Journey 🌱</h2>
-        <p>Curious to see what I've been up to?
-          This section offers a glimpse into my projects. And to help you find what you're looking for, I've added some
+        <p>Curious to see what I've been up to?<br>
+          This section offers a glimpse into my projects, and to help you find what you're looking for, I've added some
           fun buttons:</p>
 
         <div class="filters">
-          <label for="skill-filter">Filter by<span class="handwriting">&nbsp;skill:&nbsp;</span></label>
+          <div>
 
-          <select class="skill-filter">
-            <option value="">pick a skill</option>
-            <hr />
-            <optgroup label="Front-end">
-              <option value="html">HTML</option>
-              <option value="css">CSS</option>
-              <option value="react">React</option>
-              <option value="next.js">Next.js</option>
-              <option value="php">PHP</option>
-            </optgroup>
-            <hr />
-            <optgroup label="Back-end">
-              <option value="artichoke">Artichokes</option>
-              <option value="broccoli">Broccoli</option>
-              <option value="cabbage">Cabbages</option>
-            </optgroup>
-          </select>
+
+            <label for="skill-filter">Filter by<span class="handwriting">&nbsp;skill:&nbsp;</span></label>
+
+            <select id="skill-filter">
+              <option value="">pick a skill</option>
+              <hr />
+              <optgroup label="Front-end">
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="react">React</option>
+                <option value="next.js">Next.js</option>
+                <option value="php">PHP</option>
+              </optgroup>
+              <hr />
+              <optgroup label="Back-end">
+                <option value="artichoke">Artichokes</option>
+                <option value="broccoli">Broccoli</option>
+                <option value="cabbage">Cabbages</option>
+              </optgroup>
+            </select>
+          </div>
 
           <p>&nbsp;or&nbsp;</p>
           <button id="allSkillsBtn">view all skills</button>
