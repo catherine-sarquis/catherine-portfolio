@@ -16,8 +16,7 @@ body {
 }
 
 p,
-li,
-label {
+li {
   font-size: 1rem;
 }
 
@@ -421,6 +420,34 @@ skew to change the 'thickness' of the glitch.*/
   padding: 1rem;
   background-color: white;
   border-radius: 8px;
+}
+
+.filters {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.filters,
+.filters p {
+  font-size: 0.8rem
+}
+
+optgroup {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.filters select,
+.filters button {
+  background-color: var(--yellow);
+  font-size: 0.8rem;
+  border: none;
+  box-shadow: 3px 3px 0 #414141;
+  transition: transform 0.2s;
+  border-radius: 4px;
+  padding-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .filters-display {

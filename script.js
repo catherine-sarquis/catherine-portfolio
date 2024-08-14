@@ -27,9 +27,9 @@ function toggleBtnText() {
 
   // set the button text based on the visibility of skill categories
   if (isHidden) {
-    allSkillsBtn.textContent = "View All Skills";
+    allSkillsBtn.textContent = "view all skills";
   } else {
-    allSkillsBtn.textContent = "Hide Skills";
+    allSkillsBtn.textContent = "hide skills";
   }
 }
 
