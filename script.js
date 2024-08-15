@@ -143,31 +143,35 @@ function formatProjects(filteredProjects) {
       descriptionHTML += `<p>${project.description[i]}</p>`;
     }
 
+    const logoHTML = project.logo
+      ? `<img src="${project.logo}" alt="${project.name} logo" class="project-logo"/>`
+      : "";
+
+    const nameClass = project.logo ? "with-logo" : "no-logo";
+
     formattedHTML += `
       <div class="project">
-        <img src="${project.logo}" alt="${
-      project.name
-    } logo" class="project-logo"/>
-        <h3>${project.name}</h3>
+        ${logoHTML}
+        <h3 class="${nameClass}">${project.name}</h3>
         <div class="project-links">
-        <p><a href="${project.projectLink}" target="_blank">${
+          <p><a href="${project.projectLink}" target="_blank">${
       project.projectLink
-    } </a></p>
-     ${
-       project.figmaLink
-         ? `<p><a href="${project.figmaLink}" target="_blank">${project.figmaLink}</a></p>`
-         : ""
-     } </div>
-   
+    }</a></p>
+          ${
+            project.figmaLink
+              ? `<p><a href="${project.figmaLink}" target="_blank">${project.figmaLink}</a></p>`
+              : ""
+          }
+        </div>
         <img src="${project.screenshot}" alt="A screenshot of ${
       project.name
     }" class="screenshot" />
-       
-        <div class="projectText"> ${descriptionHTML}
-        <p><span id="tech-stack">Tech Stack:</span> <span id="skills-list"> ${project.skills.join(
-          ", "
-        )}</span></p></div>
-        
+        <div class="projectText">
+          ${descriptionHTML}
+          <p><span id="tech-stack">Tech Stack:</span> <span id="skills-list">${project.skills.join(
+            ", "
+          )}</span></p>
+        </div>
       </div>
     `;
   });

@@ -12,10 +12,20 @@
   <link rel="stylesheet" href="socials.css">
   <link rel="stylesheet" href="home.css">
   <link rel="stylesheet" href="about.css">
+  <script>
+    (function (d) {
+      var config = {
+        kitId: 'ilu4jwy',
+        scriptTimeout: 3000,
+        async: true
+      },
+        h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config); } catch (e) { } }; s.parentNode.insertBefore(tk, s);
+    })(document);
+  </script>
 </head>
 
 <body>
-  <div class="parent">
+  <div class="mobile-version">
     <section class="firstname">
       <h1 class="glitch" data-text="catherine">catherine</h1>
     </section>
@@ -73,38 +83,7 @@
           skill that will never go out of style 💅.</p>
       </div>
     </section>
-    <!-- <section id="skills">
-      <h2>My Learning Journey 🌱</h2>
-      <p>I'm passionate about growing as a developer, and these are the areas I'm actively exploring and building upon:
-      </p> -->
-    <!-- 
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="project-list">
-        <div class="project">
-          <h3>Hummingbird 🐦</h3>
-          <p>A full-stack web app for monitoring third-party service health, built for a pet insurance company.
-            Showcases my
-            teamwork, communication, and front-end development skills.</p>
-          <p><strong>Tech Stack:</strong> Next.js, Node.js, React, Tailwind CSS, TypeScript, PostgreSQL, Vercel</p>
-          <a href="https://github.com/sprintstars/hummingbird" target="_blank">View on GitHub</a>
-        </div>
-        <div class="project">
-          <h3>A Table For You 👨‍🍳</h3>
-          <p>Crafted a website for a private chef using PHP, HTML, and CSS. Demonstrates my initiative and willingness
-            to
-            tackle new technologies.</p>
-        </div>
-        <div class="project" data-skills="react nextjs typescript">
-          <h3>thegreensanctuarygardener.com 🌱</h3>
-          <p>Designed and developed a single-page website for a gardening business, including a custom logo.</p>
-        </div>
-        <div class="project" data-skills="react nextjs typescript" <h3>commonality-first.com 📚</h3>
-          <p>Built and customised a WordPress site for an author to publish articles and engage with readers.</p>
-        </div>
-      </div>
-    </section> -->
 
     <section class="skills-and-projects">
       <div class="padding-colour">
@@ -129,9 +108,8 @@
               </optgroup>
               <hr />
               <optgroup label="Back-end">
-                <option value="artichoke">Artichokes</option>
-                <option value="broccoli">Broccoli</option>
-                <option value="cabbage">Cabbages</option>
+                <option value="node.js">Node.js</option>
+                <option value="postgresql">PostgreSQL</option>
               </optgroup>
             </select>
           </div>
@@ -203,15 +181,74 @@
     </section>
 
     <section class="cta">
-      <p>Let's build something amazing together! 😊 I'm ready to learn, grow, and bring my positive energy to your
-        team.
-        Reach
-        out for a chat – I'd love to hear about your projects!</p>
+      <p>Thanks for checking out my portfolio!</p>
+      <p>I'm currently on the hunt for my first developer role, and I'm also happy to collaborate on projects to
+        develop my skills.</p>
+      <p>If you're feeling my energy, let's connect on LinkedIn!</p>
     </section>
 
-    <footer>[who signed off this design? me.] <br><span id="psnote">[p.s. it's even better in desktop view.]</span>
+    <footer>[who signed off this design? me.] <br><span id="psnote">[p.s. there'll soon be even more "beauty" to behold
+        on a
+        larger screen.]</span>
     </footer>
-  </div> <!-- end of parent div -->
+  </div> <!-- end of mobile-version div -->
+  <div class="screen-size-message">
+    <div class="extra-large-screen">
+      <h1>Whoa, that's a HUGE screen! 🤯</h1>
+      <p class="english">You're gonna need to shrink that browser window way down to see this portfolio in its full
+        glory. (Psst...
+        it's
+        optimised for mobile. 😉)</p>
+      <p class="spanish">¡Vaya, esa pantalla es ENORME! Tendrás que reducir MUCHO el tamaño de la ventana de tu
+        navegador para ver este portafolio en todo su esplendor. (Psst... está optimizado para celulares.)</p>
+      <p class="french">Ouah, quel grand écran ! S'il te plaît, réduire considérablement la taille de ton navigateur
+        pour voir mon portfolio! (il est optimisé pour mobile.)</p>
+      <p dir="rtl" class="arabic">سكرينك كبير جدًا! 🌸 صغر من فضلك</p>
+      <p class="korean">안녕하세요!</p>
+    </div>
+
+    <div class="large-screen">
+      <h1>Your screen is too big...</h1>
+      <p class="english">My portfolio is a bit like my rabbits – it prefers cozy spaces. Shrink your browser some more,
+        and you'll see
+        what I mean!</p>
+      <p class="spanish">Mi portafolio es como mis conejos, prefiere espacios acogedores.
+        ¡Reduce tu navegador y verás a qué me refiero!</p>
+      <p class="french">Mon portfolio est un peu comme mes lapins - il préfère les espaces
+        confortables. Réduisez ton navigateur, et tu verras ce que je veux dire !</p>
+      <p dir="rtl" class="arabic">سكرينك كبير جدًا! 🌸 صغر من فضلك</p>
+      <p class="korean">안녕하세요!</p>
+    </div>
+
+    <div class="medium-screen">
+      <h1>Your screen is too big!</h1>
+      <p class="english">Did you know rabbits can see almost 360 degrees? 🐰 This portfolio isn't quite that flexible
+        yet, but we're
+        getting there. Shrink your browser just a tad more!</p>
+      <p class="spanish">¿Sabías que los conejos pueden ver casi 360 grados? 🐰 Este
+        portafolio
+        aún no es tan flexible, pero estoy en ello. ¡Reduce tu navegador un poquito más!</p>
+      <p class="french">Tu sais que les lapins peuvent voir à presque 360 degrés ? 🐰 Ce
+        portfolio
+        n'est pas encore aussi flexible, mais on y travaille. Réduisez encore un peu ta navigateur !</p>
+      <p dir="rtl" class="arabic">سكرينك كبير جدًا! 🌸 صغر من فضلك</p>
+      <p class="korean">안녕하세요!</p>
+    </div>
+
+    <div class="almost-there-screen">
+      <h1>Almost perfect screen size!</h1>
+      <p class="english">Just a tiny bit smaller... like a bunny nose twitch! 🐇 You're almost at the ideal size to
+        experience this
+        portfolio.</p>
+      <p class="spanish">Solo un poquito más pequeño... ¡como una nariz de conejo moviéndose! 🐇 Ya casi
+        estás en el tamaño ideal para disfrutar de mi portafolio.</p>
+      <p class="french">Juste un peu plus petit... comme un petit mouvement de nez de un lapin
+        !
+        🐇 Tu es presque à la taille idéale pour enjoyer mon portfolio.</p>
+      <p dir="rtl" class="arabic">سكرينك كبير جدًا! 🌸 صغر من فضلك</p>
+      <p class="korean">안녕하세요!</p>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>

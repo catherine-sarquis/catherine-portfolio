@@ -35,7 +35,7 @@ h4 {
   font-size: 1.1rem;
 }
 
-.parent {
+.mobile-version {
   display: grid;
   padding: 5%;
   width: 100%;
@@ -205,15 +205,25 @@ optgroup {
   align-self: center;
 }
 
-.project h3 {
+.with-logo {
   grid-column: 2 / 3;
   grid-row: 1;
+}
+
+.no-logo {
+  grid-column: 1 / 3;
+  grid-row: 1;
+}
+
+.project h3 {
   object-fit: contain;
   font-size: 1rem;
   font-family: logic-monoscript, mono;
   font-weight: 500;
   align-self: center;
 }
+
+
 
 .project-links {
   grid-column: 1 / 3;
@@ -236,7 +246,6 @@ optgroup {
   height: 100px;
   object-fit: cover;
   margin-bottom: 0.5rem;
-  ;
 }
 
 .projectText {
@@ -247,6 +256,7 @@ optgroup {
   grid-row: 4;
   font-size: 0.75rem;
 }
+
 
 #tech-stack {
   font-family: good-times, sans-serif;
@@ -296,4 +306,148 @@ footer {
   padding: 1rem;
   color: white;
   background-color: rgb(83, 66, 236);
+}
+
+.screen-size-message {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f2f2f2;
+  z-index: 1000;
+  text-align: center;
+  padding: 20px;
+}
+
+.screen-size-message h1 {
+  font-family: flegrei, sans-serif;
+  font-size: 3rem;
+  font-weight: 400;
+  /* Extra bold */
+  margin-bottom: 15px;
+}
+
+.screen-size-message p {
+  padding: 1rem;
+}
+
+/* Hide all messages initially */
+.extra-large-screen,
+.large-screen,
+.medium-screen,
+.almost-there-screen {
+  display: none;
+}
+
+
+/* Media Queries for Breakpoints & Language Selection */
+
+/* Extra Large Screens */
+@media only screen and (min-width: 2000px) {
+  .mobile-version {
+    display: none;
+  }
+
+  .screen-size-message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .extra-large-screen {
+    display: block;
+  }
+}
+
+/* Large Screens */
+@media only screen and (min-width: 1400px) and (max-width: 1999px) {
+  .mobile-version {
+    display: none;
+  }
+
+  .screen-size-message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .large-screen {
+    display: block;
+  }
+}
+
+/* Medium Screens */
+@media only screen and (min-width: 992px) and (max-width: 1399px) {
+  .mobile-version {
+    display: none;
+  }
+
+  .screen-size-message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .medium-screen {
+    display: block;
+  }
+}
+
+/* Almost There (Slightly larger than ideal mobile) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .mobile-version {
+    display: none;
+  }
+
+  .screen-size-message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .almost-there-screen {
+    display: block;
+  }
+}
+
+.spanish {
+  font-family: "bimbo-pro-sharpie", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  border-top: 1px dotted var(--light-purple);
+  font-size: 1.5rem;
+
+}
+
+.french {
+  font-family: "santelia-rough-two", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  border-top: 2px dotted var(--blue);
+  font-size: 1.1rem;
+
+}
+
+.arabic {
+  font-family: "adapter-arabic-text", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  border-top: 2px dotted var(--yellow);
+  font-size: 1.5rem;
+}
+
+.korean {
+  font-family: "hoonicetea", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.8rem;
+  border-top: 2px dotted var(--pink);
+}
+
+.english {
+  font-family: beth-ellen, sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
 }
