@@ -308,6 +308,10 @@ footer {
   background-color: rgb(83, 66, 236);
 }
 
+.bunnies {
+  margin: auto;
+}
+
 .screen-size-message {
   display: none;
   position: fixed;
