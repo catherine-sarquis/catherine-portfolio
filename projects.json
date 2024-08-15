@@ -4,9 +4,9 @@
     "name": "Hummingbird",
     "projectLink": "https://github.com/sprintstars/hummingbird",
     "figmaLink": "https://figma.com/file/project1",
-    "screenshot": "assets/hummingbirdProject/statusList.png",
+    "screenshot": "assets/hummingbirdProject/hummingbird-screenshot.png",
     "description": [
-      "A full-stack web app for monitoring third-party service health."
+      "A full-stack web app for monitoring third-party service health with historical tracking."
     ],
     "skills": [
       "Next.js",
@@ -14,19 +14,18 @@
       "Tailwind CSS",
       "React",
       "TypeScript",
-      "PostgreSQL"
+      "PostgreSQL",
+      "Supabase"
     ]
   },
   {
-    "logo": "assets/hummingbirdProject/hummingbird-logo.png",
-    "name": "A Table for Two",
-    "projectLink": "https://github.com/sprintstars/hummingbird",
-
-    "screenshot": "assets/hummingbirdProject/statusList.png",
+    "name": "A Table for You",
+    "projectLink": "https://github.com/csarq/a-table-for-you",
+    "screenshot": "assets/a-table-for-you.png",
     "description": [
-      "This project is about...",
-      "It uses the following features..."
+      "A website concept for a private chef's services.",
+      "It's serving me to apply the PHP that I'm learning."
     ],
-    "skills": ["React", "Next.js", "PHP"]
+    "skills": ["PHP", "HTML", "CSS"]
   }
 ]
