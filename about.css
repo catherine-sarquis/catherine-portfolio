@@ -3,8 +3,8 @@
 }
 
 .about {
-  grid-row-start: 6;
-  border: 4px solid var(--pink);
+  grid-row-start: 5;
+  border: 2px solid var(--pink);
 }
 
 .about h2 {
