@@ -4,260 +4,49 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Catherine Sarquís' Portfolio</title>
-  <link rel="stylesheet" href="https://use.typekit.net/bcw4tth.css">
   <link rel="stylesheet" href="reset.css">
-  <link rel="stylesheet" href="styles_new.css">
-  <link rel="stylesheet" href="glitch.css">
-  <link rel="stylesheet" href="socials.css">
-  <link rel="stylesheet" href="home.css">
-  <link rel="stylesheet" href="about.css">
-  <script>
-    (function (d) {
-      var config = {
-        kitId: 'ilu4jwy',
-        scriptTimeout: 3000,
-        async: true
-      },
-        h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config); } catch (e) { } }; s.parentNode.insertBefore(tk, s);
-    })(document);
-  </script>
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Catherine Sarquis</title>
 </head>
 
 <body>
-  <div class="mobile-version">
-    <section class="name">
-      <h1 id="firstname">catherine</h1>
-      <h1 id="surname">sarquís</h1>
-    </section>
-
-    <section class="affirmations" id="affirmationsBtn">
-      <p>ooh! a message awaits, click here to fetch it.</p>
-    </section>
-
-
-    <section class="socials">
-      <p><a href="https://www.linkedin.com/in/sarquis" class="linkedin">LinkedIn</a></p>
-      <p><a href="https://github.com/csarq" class="github">GitHub</a></p>
-      <p><a href="https://x.com/catherineSrqs" class="twitter">X</a></p>
-    </section>
-
-    <!-- <section class="surname">
-      <h1>sarquís</h1>
-    </section> -->
-    <section class="div5">5</section>
-    <section class="home">
-      <h2>New developer <br>Proven work ethic</h2>
-      <p>Tired of sorting through tonnes of CVs from candidates who over promise?<br>
-        I'm a motivated newcomer to tech, eager to learn and grow alongside your team. Think of me as your next
-        investment,
-        or
-        as some easy HR tick boxes:</p>
-
-      <ul>
-        <li>gender diversity</li>
-        <li>neurodiversity</li>
-        <li>religious diversity</li>
-        <li>intersectionality</li>
-      </ul>
-    </section>
-
-    <section class="about">
-      <h2>About Me</h2>
-      <div class="for-mobile">
-        <p>I'm new to software development, but I have years of experience polishing digital content; from e-books to
-          food
-          packaging, I have an eye for detail and am invested in quality. </p>
-        <p>Now, I'm excited to apply my skills to create meaningful, user-friendly digital experiences.</p>
-        <p>I'm a curious learner with a positive attitude. And my love for languages will never go out of style. 💅</p>
+  <header>
+    <div class="name">
+      <h1 class="firstname">Catherine</h1>
+      <h1 class="surname">Sarquís</h1>
+    </div>
+    <div class="socials">
+      <div class="border">
+        <a href="https://www.linkedin.com/in/sarquis" target="_blank">LinkedIn</a>
       </div>
-      <div class="for-desktop">
-        <p>While my formal journey in software development is just starting, I bring years of experience ensuring
-          digital
-          content shines; from proofreading e-books & food packaging to formatting
-          multilingual documents and managing asset handovers. I'm invested in quality.</p>
-        <p>Now, I'm switching careers and applying my skills to the world of software development. My goal is to craft
-          digital experiences that are not only meaningful and impactful but also boast functional, and
-          user-friendly interfaces.</p>
-
-        <p>As a naturally curious learner, I embrace challenges with a positive attitude. And, my love for languages is
-          a
-          skill that will never go out of style 💅.</p>
+      <div class="border">
+        <a href="https://github.com/csarq" target="_blank">GitHub</a>
       </div>
-    </section>
-
-
-    <section class="skills-and-projects">
-      <div class="padding-colour">
-        <h2>My Learning Journey 🌱</h2>
-        <p>Curious to see what I've been up to?<br>
-          This section offers a glimpse into my projects, and to help you find what you're looking for, I've added some
-          fun buttons:</p>
-
-        <div class="filters">
-          <div id="skill-filter-container">
-            <label for="skill-filter">Filter by<span class="handwriting">&nbsp;skill:&nbsp;</span></label>
-
-            <select class="skill-filter">
-              <option value="">pick a skill</option>
-              <hr />
-              <optgroup label="Front-end">
-                <option value="html">HTML</option>
-                <option value="css">CSS</option>
-                <option value="react">React</option>
-                <option value="next.js">Next.js</option>
-                <option value="php">PHP</option>
-              </optgroup>
-              <hr />
-              <optgroup label="Back-end">
-                <option value="node.js">Node.js</option>
-                <option value="postgresql">PostgreSQL</option>
-              </optgroup>
-            </select>
-          </div>
-          <div id="allSkillBtnContainer">
-            <p>or you can simply &nbsp;</p>
-            <button id="allSkillsBtn">view all skills</button>
-          </div>
-        </div>
-
-        <div id="filters-display">
-          <div class="projects-display"></div>
-
-          <div class="all-skills-display">
-            <div class="skill-category">
-              <h3>Front-End Development</h3>
-              <h4>Languages & Frameworks:</h4>
-              <ul>
-                <li>React</li>
-                <li>Next.js</li>
-                <li>HTML</li>
-                <li>CSS (inc. Tailwind CSS)</li>
-                <li>JavaScript</li>
-              </ul>
-            </div>
-            <div class="skill-category">
-              <h3>Design & Prototyping</h3>
-              <ul>
-                <li>Figma</li>
-                <li>Adobe XD</li>
-                <li>Adobe Illustrator</li>
-                <li>Adobe Photoshop</li>
-              </ul>
-            </div>
-            <div class="skill-category">
-              <h3>Back-End Development</h3>
-              <h4>Languages & Frameworks:</h4>
-              <ul>
-                <li>Node.js</li>
-                <li>Express</li>
-                <li>PHP</li>
-                <li>Python</li>
-              </ul>
-            </div>
-            <div class="skill-category">
-              <h3>Database Management</h3>
-              <ul>
-                <li>PostgreSQL</li>
-                <li>SQL</li>
-              </ul>
-            </div>
-            <div class="skill-category">
-              <h3>Testing & Deployment</h3>
-              <h4>Testing:</h4>
-              <ul>
-                <li>Vitest</li>
-                <li>Playwright</li>
-                <li>Selenium</li>
-              </ul>
-              <h4>CI/CD:</h4>
-              <ul>
-                <li>GitHub Actions</li>
-                <li>Git (version control)</li>
-              </ul>
-            </div>
-          </div>
-
-        </div>
+      <div class="border">
+        <a href="https://x.com/catherineSrqs" target="_blank">X</a>
       </div>
-    </section>
-
-    <section class="cta">
-      <p>Thanks for checking out my portfolio!</p>
-      <p>I'm currently on the hunt for my first developer role, and I'm also happy to collaborate on projects to
-        develop my skills.</p>
-      <p>If you're feeling my energy, let's connect on LinkedIn!</p>
-    </section>
-
-    <footer>[who signed off this design? me.] <br><span id="psnote">[p.s. there'll soon be even more "beauty" to behold
-        on a
-        larger screen.]</span>
-    </footer>
-  </div> <!-- end of mobile-version div -->
-  <div class="screen-size-message">
-
-
-    <div class="extra-large-screen">
-      <img src="assets/bunnies.png" alt="my two bunnies" class="bunnies" />
-      <h1>Whoa, that's a HUGE screen! 🤯</h1>
-      <p class="english">You're gonna need to shrink that browser window way down to see this portfolio in its full
-        glory. (Psst...
-        it's
-        optimised for mobile. 😉)</p>
-      <p class="spanish">¡Vaya, esa pantalla es ENORME! Tendrás que reducir MUCHO el tamaño de la ventana de tu
-        navegador para ver este portafolio en todo su esplendor. (Psst... está optimizado para celulares.)</p>
-      <p class="french">Ouah, quel grand écran ! S'il te plaît, réduire considérablement la taille de ton navigateur
-        pour voir mon portfolio! (il est optimisé pour mobile.)</p>
-      <p dir="rtl" class="arabic">سكرينك كبير جدًا! 🌸 صغر من فضلك</p>
-      <p class="korean">안녕하세요!</p>
     </div>
+  </header>
+  <!-- <h2 class="border projectsButton">view my projects</h2> -->
 
-    <div class="large-screen">
-      <img src="assets/bunnies.png" alt="my two bunnies" class="bunnies" />
-      <h1>Your screen is too big...</h1>
-      <p class="english">My portfolio is a bit like my rabbits – it prefers cozy spaces. Shrink your browser some more,
-        and you'll see
-        what I mean!</p>
-      <p class="spanish">Mi portafolio es como mis conejos, prefiere espacios acogedores.
-        ¡Reduce tu navegador y verás a qué me refiero!</p>
-      <p class="french">Mon portfolio est un peu comme mes lapins - il préfère les espaces
-        confortables. Réduisez ton navigateur, et tu verras ce que je veux dire !</p>
-      <p dir="rtl" class="arabic">سكرينك كبير جدًا! 🌸 صغر من فضلك</p>
-      <p class="korean">안녕하세요!</p>
-    </div>
+  <section class="border">
+    <h2>About me</h2>
+    <p class="margin-bottom">I never imagined that the joy I feel from improving things would lead me to the world of
+      tech.
+      As I delved further into coding, I discovered a surprising connection: the same interest for detail and
+      user-centric design that guided my work in proofreading, desktop publishing & production editing could also create
+      impactful digital solutions.</p>
+    <p>Now, I'm eager to embark on this exciting new chapter, leveraging my unique blend of skills to contribute to
+      innovative
+      teams and impactful projects in the world of tech.</p>
+  </section>
 
-    <div class="medium-screen"><img src="assets/bunnies.png" alt="my two bunnies" class="bunnies" />
-      <h1>Your screen is too big!</h1>
-      <p class="english">Did you know rabbits can see almost 360 degrees? 🐰 This portfolio isn't quite that flexible
-        yet, but we're
-        getting there. Shrink your browser just a tad more!</p>
-      <p class="spanish">¿Sabías que los conejos pueden ver casi 360 grados? 🐰 Este
-        portafolio
-        aún no es tan flexible, pero estoy en ello. ¡Reduce tu navegador un poquito más!</p>
-      <p class="french">Tu sais que les lapins peuvent voir à presque 360 degrés ? 🐰 Ce
-        portfolio
-        n'est pas encore aussi flexible, mais on y travaille. Réduisez encore un peu ta navigateur !</p>
-      <p dir="rtl" class="arabic">سكرينك كبير جدًا! 🌸 صغر من فضلك</p>
-      <p class="korean">안녕하세요!</p>
-    </div>
+  <section class="border">
+    <h2>Are you hiring?</h2>
+    <p>I'm seeking an opportunity to expand my knowledge and make a meaningful impact. If you foster a collaborative and
+      growth-oriented environment, I'd love to bring my passion and dedication to your team.</p>
 
-    <div class="almost-there-screen">
-      <img src="assets/bunnies.png" alt="my two bunnies" class="bunnies" />
-      <h1>Almost perfect screen size!</h1>
-      <p class="english">Just a tiny bit smaller... like a bunny nose twitch! 🐇 You're almost at the ideal size to
-        experience this
-        portfolio.</p>
-      <p class="spanish">Solo un poquito más pequeño... ¡como una nariz de conejo moviéndose! 🐇 Ya casi
-        estás en el tamaño ideal para disfrutar de mi portafolio.</p>
-      <p class="french">Juste un peu plus petit... comme un petit mouvement de nez de un lapin
-        !
-        🐇 Tu es presque à la taille idéale pour enjoyer mon portfolio.</p>
-      <p dir="rtl" class="arabic">سكرينك كبير جدًا! 🌸 صغر من فضلك</p>
-      <p class="korean">안녕하세요!</p>
-    </div>
-  </div>
-
-  <script src="script.js"></script>
 </body>
 
 </html>
