@@ -1,0 +1,72 @@
+body {
+  font-size: 12px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+header {
+  display: flex;
+  height: 100px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+h1 {
+  margin: 0;
+}
+
+.name {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.firstname {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  text-align: right;
+  align-self: end;
+  /* Aligns to the bottom of the grid cell */
+  line-height: 1;
+  /* Ensures text aligns to the bottom */
+}
+
+.surname {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  align-self: start;
+  /* Aligns to the top of the grid cell */
+  line-height: 1;
+  /* Ensures text aligns to the top */
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.border {
+  border: 2px solid black;
+  border-radius: 2px;
+}
+
+.socials div {
+  padding: 1px 20px;
+}
+
+section {
+  padding: 20px;
+}
+
+section h2 {
+  margin-bottom: 10px;
+}
+
+.margin-bottom {
+  margin-bottom: 10px;
+}
