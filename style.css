@@ -1,4 +1,20 @@
-body {}
+body {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 30px;
+}
+
+section {
+  border: #000000 solid 1px;
+  padding: 20px;
+}
 
 i {
   color: #000000;
