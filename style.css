@@ -1,7 +1,38 @@
 body {
   display: flex;
   flex-direction: column;
+  padding: 0 20px;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+  margin: 20px;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  border: solid 1px #000000;
   padding: 20px;
+}
+
+li {
+  list-style: none;
+}
+
+/* active link styles */
+.current {
+  background-color: blue;
+  color: white;
 }
 
 main {
