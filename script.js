@@ -30,3 +30,40 @@ function findTheCurrentPage(event) {
 
 //make sure page has loaded first
 document.addEventListener("DOMContentLoaded", findTheCurrentPage);
+
+//---------------- GET DATE REPO WAS LAST UPDATED ---------------------
+function formatDate(timestamp) {
+  const weekday = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+
+  let day = weekday[timestamp.getDay()];
+  console.log(day);
+  // console.log(date.toUTCString());
+}
+
+async function getLastPush() {
+  const url =
+    "https://api.github.com/repos/catherine-sarquis/catherine-portfolio";
+  try {
+    const response = await fetch(url);
+
+    if (!response.ok) {
+      throw new Error(`Response status: ${response.status}`);
+    }
+
+    const json = await response.json();
+    const timestamp = new Date(json.pushed_at);
+    formatDate(timestamp);
+  } catch (error) {
+    console.error(error.message);
+  }
+}
+
+getLastPush();
