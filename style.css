@@ -63,6 +63,10 @@ section {
   padding: 1.5rem;
 }
 
+.challenge-log {
+  display: none
+}
+
 .tech-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -123,3 +127,61 @@ footer p:last-of-type {
   }
 
 }
+
+@media (min-width: 760px) {
+  main {
+    max-width: 95%;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+  }
+
+  section {
+    padding: 1rem;
+  }
+
+  .who-am-i {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+  }
+
+  .challenge-log {
+    display: block;
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+  }
+
+  .coding-journey {
+    grid-row: 2 / 5;
+  }
+
+  .completion-date {
+    display: none;
+  }
+
+  .heading {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+  }
+
+  .descriptor {
+    grid-column: 1 / 3;
+    grid-row: 4 / 5;
+  }
+
+  .exploring-tech {
+    grid-column: 1 / 4;
+    grid-row: 5/6;
+  }
+
+  .tech-grid {
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap: 1rem;
+  }
+
+  .tech-item i {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1000px) {}
