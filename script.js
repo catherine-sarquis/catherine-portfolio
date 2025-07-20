@@ -33,19 +33,18 @@ document.addEventListener("DOMContentLoaded", findTheCurrentPage);
 
 //---------------- GET DATE REPO WAS LAST UPDATED ---------------------
 function formatDate(timestamp) {
-  const weekday = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
-  ];
+  const options = {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  };
 
-  let day = weekday[timestamp.getDay()];
-  console.log(day);
-  // console.log(date.toUTCString());
+  return timestamp.toLocaleDateString("en-GB", options);
+}
+
+function displayDate(date) {
+  const lastUpdatedElement = document.getElementById("last-updated");
+  lastUpdatedElement.textContent = date;
 }
 
 async function getLastPush() {
@@ -60,7 +59,8 @@ async function getLastPush() {
 
     const json = await response.json();
     const timestamp = new Date(json.pushed_at);
-    formatDate(timestamp);
+    formattedDate = formatDate(timestamp);
+    displayDate(formattedDate);
   } catch (error) {
     console.error(error.message);
   }
