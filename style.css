@@ -61,10 +61,13 @@ p {
 section {
   border: #000000 solid 1px;
   padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .challenge-log {
-  display: none
+  display: none;
 }
 
 .tech-grid {
@@ -96,6 +99,10 @@ section {
 .tech-item i {
   color: #000000;
   font-size: 2rem;
+}
+
+.completion-date {
+  opacity: 0.70;
 }
 
 footer {
@@ -154,8 +161,15 @@ footer p:last-of-type {
     grid-row: 2 / 5;
   }
 
-  .completion-date {
+  .divider {
     display: none;
+  }
+
+  .completion-date {
+    display: block;
+    font-size: small;
+    margin-bottom: 0.25rem;
+
   }
 
   .heading {
