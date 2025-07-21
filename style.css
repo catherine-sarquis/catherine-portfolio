@@ -125,6 +125,8 @@ footer p:last-of-type {
 }
 
 @media (min-width: 460px) {
+
+
   .tech-grid {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -138,16 +140,16 @@ footer p:last-of-type {
   footer p:nth-of-type(2) {
     display: inline;
   }
-
 }
 
 @media (min-width: 760px) {
   body {
-    min-height: 100vh;
+    max-width: 75vw;
+    height: 90vh;
+    margin: 0 auto;
   }
 
   main {
-    max-width: 90%;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 1rem;
   }
@@ -208,10 +210,10 @@ footer p:last-of-type {
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 900px) {
   main {
-    max-width: 70vw;
-
+    max-width: 75vw;
+    height: 90vh;
   }
 
   .who-am-i {
