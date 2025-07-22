@@ -1,7 +1,16 @@
+:root {
+  --light-sections-border-and-shadow: rgb(17, 17, 27);
+  --light-base: rgb(239, 241, 245);
+  --light-descriptor-bg: rgb(114, 135, 253);
+  --light-heading-bg: rgb(25, 153, 153);
+  --light-button: rgb(234, 118, 203);
+}
+
 body {
   display: flex;
   flex-direction: column;
   padding: 0 1.5rem;
+  background-color: var(--light-base);
 }
 
 nav {
@@ -21,7 +30,6 @@ nav ul {
   display: flex;
   flex-direction: row;
   gap: 1.5rem;
-  border: solid 1px #000000;
   padding: 1.5rem;
 }
 
@@ -29,10 +37,26 @@ li {
   list-style: none;
 }
 
+nav li {
+  box-shadow: 4px 4px 0px var(--light-sections-border-and-shadow);
+  border: solid 3px var(--light-sections-border-and-shadow);
+  border-radius: 5px;
+  padding: 1rem 0.5rem;
+  text-decoration: none;
+}
+
+
+
 /* active link styles */
 .current {
-  background-color: blue;
-  color: white;
+  padding: 0.8rem 1rem;
+  background-color: var(--light-button);
+  color: var(--base);
+  text-decoration: none;
+}
+
+.heading {
+  background-color: var(--light-heading-bg);
 }
 
 main {
@@ -61,11 +85,16 @@ p {
 }
 
 section {
-  border: #000000 solid 1px;
+  border: var(--light-sections-border-and-shadow) solid 3px;
+  border-radius: 5px;
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.descriptor {
+  background-color: var(--light-descriptor-bg);
 }
 
 .photo {
@@ -151,7 +180,6 @@ footer p:last-of-type {
 
   main {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 1rem;
   }
 
   section {
