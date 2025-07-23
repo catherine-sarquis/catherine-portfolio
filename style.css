@@ -98,7 +98,9 @@ nav li {
   font-size: larger;
 }
 
-.change-theme:hover {}
+.change-theme:hover {
+  cursor: pointer;
+}
 
 
 
