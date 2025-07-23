@@ -16,11 +16,38 @@
   --section-fill: rgb(48, 52, 70);
 }
 
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 0.5s;
+}
+
+::view-transition-old(root) {
+  animation-name: fade-out;
+}
+
+::view-transition-new(root) {
+  animation-name: fade-in;
+}
+
+@keyframes fade-out {
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+}
+
 body {
   display: flex;
   flex-direction: column;
   padding: 0 1.5rem;
   background-color: var(--base);
+  /* Smooth transitions for browsers without View Transitions */
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 header {
@@ -70,6 +97,10 @@ nav li {
   width: fit-content;
   font-size: larger;
 }
+
+.change-theme:hover {}
+
+
 
 
 /* active link styles */

@@ -67,3 +67,37 @@ async function getLastPush() {
 }
 
 getLastPush();
+
+//---------------- TOGGLE THEME BUTTON! ---------------------
+
+const themeToggle = document.getElementById("change-theme-button");
+const htmlElement = document.documentElement;
+
+const supportsViewTransitions = "startViewTransition" in document;
+
+// Enhanced fallback with smooth CSS transitions for unsupported browsers
+function toggleTheme() {
+  const isDark = htmlElement.getAttribute("data-theme") === "dark";
+
+  const updateTheme = () => {
+    if (isDark) {
+      htmlElement.removeAttribute("data-theme");
+      localStorage.removeItem("theme");
+    } else {
+      htmlElement.setAttribute("data-theme", "dark");
+      localStorage.setItem("theme", "dark");
+    }
+  };
+
+  if ("startViewTransition" in document) {
+    // Chrome/Safari: Fancy View Transitions
+    console.log("🎬 Using View Transitions API");
+    document.startViewTransition(updateTheme);
+  } else {
+    // Firefox/others: CSS transition fallback
+    console.log("🔄 Using CSS transition fallback");
+    updateTheme();
+  }
+}
+
+themeToggle.addEventListener("click", toggleTheme);
