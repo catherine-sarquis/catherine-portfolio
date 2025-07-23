@@ -1,16 +1,26 @@
 :root {
-  --light-sections-border-and-shadow: rgb(17, 17, 27);
-  --light-base: rgb(239, 241, 245);
-  --light-descriptor-bg: rgb(114, 135, 253);
-  --light-heading-bg: rgb(25, 153, 153);
-  --light-button: rgb(234, 118, 203);
+  --sections-border-and-shadow: rgb(17, 17, 27);
+  --base: rgb(239, 241, 245);
+  --descriptor-bg: rgb(114, 135, 253);
+  --heading-bg: rgb(25, 153, 153);
+  --button: rgb(234, 118, 203);
+  --section-fill: rgb(239, 241, 245);
+}
+
+[data-theme="dark"] {
+  --sections-border-and-shadow: rgb(186, 187, 241);
+  --base: rgb(35, 38, 52);
+  --descriptor-bg: rgb(140, 170, 238);
+  --heading-bg: rgb(129, 200, 190);
+  --button: rgb(244, 184, 228);
+  --section-fill: rgb(48, 52, 70);
 }
 
 body {
   display: flex;
   flex-direction: column;
   padding: 0 1.5rem;
-  background-color: var(--light-base);
+  background-color: var(--base);
 }
 
 nav {
@@ -38,8 +48,8 @@ li {
 }
 
 nav li {
-  box-shadow: 4px 4px 0px var(--light-sections-border-and-shadow);
-  border: solid 3px var(--light-sections-border-and-shadow);
+  box-shadow: 4px 4px 0px var(--sections-border-and-shadow);
+  border: solid 3px var(--sections-border-and-shadow);
   border-radius: 5px;
   padding: 1rem 0.5rem;
   text-decoration: none;
@@ -50,13 +60,13 @@ nav li {
 /* active link styles */
 .current {
   padding: 0.8rem 1rem;
-  background-color: var(--light-button);
+  background-color: var(--button);
   color: var(--base);
   text-decoration: none;
 }
 
 .heading {
-  background-color: var(--light-heading-bg);
+  background-color: var(--heading-bg);
 }
 
 main {
@@ -85,7 +95,7 @@ p {
 }
 
 section {
-  border: var(--light-sections-border-and-shadow) solid 3px;
+  border: var(--sections-border-and-shadow) solid 3px;
   border-radius: 5px;
   padding: 1.5rem;
   display: flex;
@@ -94,7 +104,7 @@ section {
 }
 
 .descriptor {
-  background-color: var(--light-descriptor-bg);
+  background-color: var(--descriptor-bg);
 }
 
 .photo {
@@ -195,8 +205,8 @@ footer p:last-of-type {
     display: block;
     grid-column: 3 / 4;
     grid-row: 1 / 2;
-    background-color: var(--light-button);
-    box-shadow: 4px 4px 0px var(--light-sections-border-and-shadow);
+    background-color: var(--button);
+    box-shadow: 4px 4px 0px var(--sections-border-and-shadow);
   }
 
   .coding-journey {
