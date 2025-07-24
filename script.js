@@ -3,8 +3,11 @@
 function findTheCurrentPage(event) {
   const whatPageisThis = window.location.pathname;
   const navLinks = document.querySelectorAll("nav a");
+
   navLinks.forEach((link) => {
-    link.classList.remove("current");
+    // Remove current class from the parent <li> element
+    link.parentElement.classList.remove("current");
+
     const destinationLink = new URL(link.href).pathname;
     let doTheLinksMatch = false;
 
@@ -21,9 +24,8 @@ function findTheCurrentPage(event) {
     }
 
     if (doTheLinksMatch === true) {
-      link.classList.add("current");
-    } else {
-      link.classList.remove("current");
+      // Add current class to the parent <li> element
+      link.parentElement.classList.add("current");
     }
   });
 }
