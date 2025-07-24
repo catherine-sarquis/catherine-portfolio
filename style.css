@@ -96,7 +96,7 @@ ul {
 nav ul {
   display: flex;
   flex-direction: row;
-  gap: 3rem;
+  gap: 2rem;
 }
 
 li {
@@ -125,7 +125,7 @@ nav li a {
   box-shadow: 4px 4px 0px var(--sections-border-and-shadow);
   border: solid 3px var(--sections-border-and-shadow);
   border-radius: 5px;
-  padding: 0.4rem;
+  padding: 0.2rem;
   align-self: center;
   height: fit-content;
   width: fit-content;
