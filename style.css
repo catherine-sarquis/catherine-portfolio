@@ -85,6 +85,9 @@ li {
 }
 
 nav li {
+  text-align: center;
+  width: 4rem;
+  background-color: var(--section-fill);
   box-shadow: 4px 4px 0px var(--sections-border-and-shadow);
   border: solid 3px var(--sections-border-and-shadow);
   border-radius: 5px;
@@ -92,11 +95,17 @@ nav li {
   text-decoration: none;
 }
 
+nav li a {
+  color: var(--text-colour);
+  text-decoration: none;
+}
+
 .change-theme {
+  background-color: var(--section-fill);
   box-shadow: 4px 4px 0px var(--sections-border-and-shadow);
   border: solid 3px var(--sections-border-and-shadow);
   border-radius: 5px;
-  padding: 0.8rem;
+  padding: 0.8rem 1rem;
   align-self: center;
   height: fit-content;
   width: fit-content;
@@ -112,9 +121,12 @@ nav li {
 
 /* active link styles */
 .current {
-  padding: 0.8rem 1rem;
   background-color: var(--button);
-  color: var(--base);
+  color: var(--overlay-text-colour);
+}
+
+.current a {
+  color: var(--overlay-text-colour);
   text-decoration: none;
 }
 
