@@ -7,6 +7,13 @@
   --section-fill: rgb(239, 241, 245);
   --text-colour: rgb(17, 17, 27);
   --overlay-text-colour: rgb(239, 241, 245);
+  --heading-font: "nitti-typewriter-open", sans-serif;
+  --heading-weight: 800;
+  --heading-style: normal;
+  --text-font: "source-sans-3",
+    sans-serif;
+  --text-weight: 400;
+  --text-style: normal;
 }
 
 [data-theme="dark"] {
@@ -18,6 +25,7 @@
   --section-fill: rgb(48, 52, 70);
   --text-colour: rgb(198, 208, 245);
   --overlay-text-colour: rgb(35, 38, 52);
+  --dark-letter-spacing: 0.01em;
 }
 
 ::view-transition-old(root),
@@ -45,6 +53,8 @@
   }
 }
 
+
+
 body {
   display: flex;
   flex-direction: column;
@@ -53,18 +63,28 @@ body {
   background-color: var(--base);
   /* Smooth transitions for browsers without View Transitions */
   transition: all 0.3s ease-in-out, color 0.3s ease-in-out;
+  font-family: var(--text-font);
+  font-weight: var(--text-weight);
+  font-style: var(--text-style);
+  font-size: 1.25rem;
+}
+
+body :is(p, ol, ul) {
+  letter-spacing: var(--dark-letter-spacing)
 }
 
 header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin: 1.5rem 0 2rem 0;
 }
 
 nav {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   flex-wrap: nowrap;
 }
 
@@ -77,7 +97,6 @@ nav ul {
   display: flex;
   flex-direction: row;
   gap: 3rem;
-  padding: 2rem 2rem 2rem 0rem;
 }
 
 li {
@@ -86,12 +105,13 @@ li {
 
 nav li {
   text-align: center;
-  width: 4rem;
+  font-size: 1rem;
+  width: 5rem;
   background-color: var(--section-fill);
   box-shadow: 4px 4px 0px var(--sections-border-and-shadow);
   border: solid 3px var(--sections-border-and-shadow);
   border-radius: 5px;
-  padding: 1rem 0.5rem;
+  padding: 0.6rem;
   text-decoration: none;
 }
 
@@ -105,19 +125,16 @@ nav li a {
   box-shadow: 4px 4px 0px var(--sections-border-and-shadow);
   border: solid 3px var(--sections-border-and-shadow);
   border-radius: 5px;
-  padding: 0.8rem 1rem;
+  padding: 0.6rem;
   align-self: center;
   height: fit-content;
   width: fit-content;
-  font-size: larger;
+  font-size: large;
 }
 
 .change-theme:hover {
   cursor: pointer;
 }
-
-
-
 
 /* active link styles */
 .current {
@@ -150,6 +167,9 @@ h3,
 h4,
 h5 {
   margin: 0;
+  font-family: var(--heading-font);
+  font-weight: var(--heading-weight);
+  font-style: var(--heading-style);
 }
 
 p {
