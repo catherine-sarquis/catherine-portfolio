@@ -5,6 +5,8 @@
   --heading-bg: rgb(25, 153, 153);
   --button: rgb(234, 118, 203);
   --section-fill: rgb(239, 241, 245);
+  --text-colour: rgb(17, 17, 27);
+  --overlay-text-colour: rgb(239, 241, 245);
 }
 
 [data-theme="dark"] {
@@ -14,6 +16,8 @@
   --heading-bg: rgb(129, 200, 190);
   --button: rgb(244, 184, 228);
   --section-fill: rgb(48, 52, 70);
+  --text-colour: rgb(198, 208, 245);
+  --overlay-text-colour: rgb(35, 38, 52);
 }
 
 ::view-transition-old(root),
@@ -45,9 +49,10 @@ body {
   display: flex;
   flex-direction: column;
   padding: 0 1.5rem;
+  color: var(--text-colour);
   background-color: var(--base);
   /* Smooth transitions for browsers without View Transitions */
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: all 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 header {
@@ -115,6 +120,7 @@ nav li {
 
 .heading {
   background-color: var(--heading-bg);
+  color: var(--overlay-text-colour);
 }
 
 main {
@@ -150,10 +156,12 @@ section {
   flex-direction: column;
   justify-content: center;
   background-color: var(--section-fill);
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .descriptor {
   background-color: var(--descriptor-bg);
+  color: var(--overlay-text-colour);
 }
 
 .photo {
@@ -191,7 +199,7 @@ section {
 }
 
 .tech-item i {
-  color: #000000;
+  color: var(--text-colour);
   font-size: 2rem;
 }
 
@@ -256,6 +264,7 @@ footer p:last-of-type {
     grid-row: 1 / 2;
     background-color: var(--button);
     box-shadow: 4px 4px 0px var(--sections-border-and-shadow);
+    color: var(--overlay-text-colour);
   }
 
   .coding-journey {
