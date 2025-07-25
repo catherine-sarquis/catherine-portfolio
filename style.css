@@ -28,6 +28,8 @@
   --text-colour: rgb(198, 208, 245);
   --overlay-text-colour: rgb(35, 38, 52);
   --dark-letter-spacing: 0.01em;
+  --github-fill: rgb(229, 200, 144);
+  --deployed-fill: rgb(166, 209, 137);
 }
 
 ::view-transition-old(root),
@@ -253,6 +255,76 @@ footer p:nth-of-type(2) {
 footer p:last-of-type {
   margin-bottom: 1rem;
 }
+
+
+
+/* style mobile styles for project page */
+
+.projects {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card {
+  border: none;
+}
+
+.project-title {
+  border: var(--border-and-shadow) solid 3px;
+  padding: 0.6rem;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.project-image img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.project-about {
+  border: var(--border-and-shadow) solid 3px;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.project-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.github-link {
+  text-align: center;
+  font-size: 1rem;
+  background-color: var(--github-fill);
+  box-shadow: 4px 4px 0px var(--btn-border-and-shadow);
+  border: solid 3px var(--btn-border-and-shadow);
+  border-radius: 5px;
+  padding: 0.6rem;
+  width: 30%;
+  text-decoration: none;
+  color: var(--overlay-text-colour)
+}
+
+.deployed-link {
+  text-align: center;
+  font-size: 1rem;
+  background-color: var(--deployed-fill);
+  box-shadow: 4px 4px 0px var(--btn-border-and-shadow);
+  border: solid 3px var(--btn-border-and-shadow);
+  border-radius: 5px;
+  padding: 0.6rem;
+  width: 30%;
+  text-decoration: none;
+  color: var(--overlay-text-colour)
+}
+
+
+
+
+/* media queries start here */
 
 @media (min-width: 460px) {
 
