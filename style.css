@@ -1,6 +1,7 @@
 :root {
-  --sections-border-and-shadow: rgb(17, 17, 27);
-  --base: rgb(239, 241, 245);
+  --btn-border-and-shadow: rgb(17, 17, 27);
+  --border-and-shadow: rgb(17, 17, 27);
+  --body-bg: rgb(220, 224, 232);
   --descriptor-bg: rgb(114, 135, 253);
   --heading-bg: rgb(25, 153, 153);
   --button: rgb(234, 118, 203);
@@ -17,8 +18,9 @@
 }
 
 [data-theme="dark"] {
-  --sections-border-and-shadow: rgb(186, 187, 241);
-  --base: rgb(35, 38, 52);
+  --btn-border-and-shadow: rgb(98, 104, 128);
+  --border-and-shadow: rgb(186, 187, 241);
+  --body-bg: rgb(35, 38, 52);
   --descriptor-bg: rgb(140, 170, 238);
   --heading-bg: rgb(129, 200, 190);
   --button: rgb(244, 184, 228);
@@ -60,7 +62,7 @@ body {
   flex-direction: column;
   padding: 0 1.5rem;
   color: var(--text-colour);
-  background-color: var(--base);
+  background-color: var(--body-bg);
   /* Smooth transitions for browsers without View Transitions */
   transition: all 0.3s ease-in-out, color 0.3s ease-in-out;
   font-family: var(--text-font);
@@ -108,8 +110,8 @@ nav li {
   font-size: 1rem;
   width: 5rem;
   background-color: var(--section-fill);
-  box-shadow: 4px 4px 0px var(--sections-border-and-shadow);
-  border: solid 3px var(--sections-border-and-shadow);
+  box-shadow: 4px 4px 0px var(--btn-border-and-shadow);
+  border: solid 3px var(--btn-border-and-shadow);
   border-radius: 5px;
   padding: 0.6rem;
   text-decoration: none;
@@ -122,8 +124,8 @@ nav li a {
 
 .change-theme {
   background-color: var(--section-fill);
-  box-shadow: 4px 4px 0px var(--sections-border-and-shadow);
-  border: solid 3px var(--sections-border-and-shadow);
+  box-shadow: 4px 4px 0px var(--btn-border-and-shadow);
+  border: solid 3px var(--btn-border-and-shadow);
   border-radius: 5px;
   padding: 0.2rem;
   align-self: center;
@@ -181,7 +183,7 @@ p {
 }
 
 section {
-  border: var(--sections-border-and-shadow) solid 3px;
+  border: var(--border-and-shadow) solid 3px;
   border-radius: 5px;
   padding: 1.5rem;
   display: flex;
@@ -295,7 +297,8 @@ footer p:last-of-type {
     grid-column: 3 / 4;
     grid-row: 1 / 2;
     background-color: var(--button);
-    box-shadow: 4px 4px 0px var(--sections-border-and-shadow);
+    border: var(--btn-border-and-shadow) solid 3px;
+    box-shadow: 4px 4px 0px var(--btn-border-and-shadow);
     color: var(--overlay-text-colour);
   }
 
