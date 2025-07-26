@@ -416,10 +416,13 @@ footer p:last-of-type {
     box-shadow: 4px 4px 0px var(--btn-border-and-shadow);
     color: var(--overlay-text-colour);
     cursor: pointer;
+    text-align: center;
   }
 
   .challenge-log a {
     display: block;
+    text-decoration: none;
+    color: var(--overlay-text-colour)
   }
 
   .coding-journey {
