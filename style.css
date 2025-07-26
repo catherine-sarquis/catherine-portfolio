@@ -119,11 +119,27 @@ nav li {
   border-radius: 5px;
   padding: 0.6rem;
   text-decoration: none;
+  cursor: pointer;
+}
+
+.button {
+  transition: all 0.1s ease-in-out;
+}
+
+.button:hover {
+  transition: all 0.1s ease-in-out;
+  transform: translate(4px, 4px);
+  box-shadow: 0px 0px 0px var(--btn-border-and-shadow);
 }
 
 nav li a {
   color: var(--text-colour);
   text-decoration: none;
+  display: block;
+}
+
+.connect {
+  display: none;
 }
 
 .change-theme {
@@ -200,6 +216,7 @@ section {
 .descriptor {
   background-color: var(--descriptor-bg);
   color: var(--overlay-text-colour);
+  border: solid 3px var(--border-and-shadow);
 }
 
 .photo {
@@ -371,9 +388,15 @@ footer p:last-of-type {
     margin: 0 auto;
   }
 
+  .connect {
+    display: block;
+  }
+
   main {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
+
+
 
   section {
     padding: 1rem;
@@ -392,6 +415,11 @@ footer p:last-of-type {
     border: var(--btn-border-and-shadow) solid 3px;
     box-shadow: 4px 4px 0px var(--btn-border-and-shadow);
     color: var(--overlay-text-colour);
+    cursor: pointer;
+  }
+
+  .challenge-log a {
+    display: block;
   }
 
   .coding-journey {

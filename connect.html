@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.typekit.net/bcw4tth.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <script>
+    (() => {
+      try {
+        const savedTheme = localStorage.getItem("theme");
+        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+        if (savedTheme === "dark" || (!savedTheme && prefersDark)) {
+          document.documentElement.setAttribute("data-theme", "dark");
+        }
+
+        //list for system preference changes
+        window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", (e) => {
+          if (!localStorage.getItem("theme")) {
+            document.documentElement.setAttribute("data-theme", e.matches ? "dark" : "");
+          }
+        });
+      } catch (e) {
+        //fallback if localStorage is blocked
+        console.warn("Theme preference could not be loaded");
+      }
+    })();
+  </script>
+
+  <title>Catherine Sarquís | Portfolio</title>
+</head>
+
+<body class="home-page">
+  <header>
+    <nav>
+      <ul>
+        <li class="button"><a href="/" id="home-link">Home</a></li>
+        <li class="button"><a href="projects.html" id="projects-link">Projects</a></li>
+        <li class="connect button"><a href="connect.html" id="connect-link">Connect</a></li>
+      </ul>
+
+    </nav>
+    <div class="change-theme button" id="change-theme-button">
+      🌓
+    </div>
+  </header>
+  <main>
+
+
+  </main>
+  <footer>
+    <p>Created by Catherine Sarquís</p>
+    <p>|</p>
+    <p>Last updated: <span id="last-updated"></span></p>
+  </footer>
+</body>
+<script src="script.js"></script>
+
+</html>
