@@ -282,10 +282,22 @@ footer p:last-of-type {
 }
 
 .project-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   border: var(--border-and-shadow) solid 3px;
   padding: 1rem;
   border-radius: 5px;
   margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+.project-about p {
+  margin-top: 0;
+}
+
+.extra-project-details {
+  display: none;
 }
 
 .project-links {
@@ -303,7 +315,8 @@ footer p:last-of-type {
   border: solid 3px var(--btn-border-and-shadow);
   border-radius: 5px;
   padding: 0.6rem;
-  width: 30%;
+  min-width: 30%;
+  max-width: 40%;
   text-decoration: none;
   color: var(--overlay-text-colour)
 }
@@ -316,7 +329,8 @@ footer p:last-of-type {
   border: solid 3px var(--btn-border-and-shadow);
   border-radius: 5px;
   padding: 0.6rem;
-  width: 30%;
+  min-width: 30%;
+  max-width: 40%;
   text-decoration: none;
   color: var(--overlay-text-colour)
 }
@@ -480,5 +494,53 @@ footer p:last-of-type {
 
   .completion-date {
     display: inline;
+  }
+
+  .projects {
+    height: auto;
+  }
+
+  .project-card {
+    display: grid;
+    padding: 2rem;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    gap: 1rem 2rem;
+  }
+
+  .project-image {
+    grid-column: 1;
+    grid-row: 1 / 4;
+  }
+
+  .project-image img {
+    width: 100%;
+    height: 100%;
+    /* ensures the image covers its container without stretching or squishing */
+    object-fit: cover;
+  }
+
+  .project-title {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .project-about {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+
+  .project-links {
+    grid-column: 2;
+    grid-row: 3;
+    display: flex;
+    gap: 0.5rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .extra-project-details {
+    display: block;
   }
 }
