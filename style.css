@@ -358,7 +358,26 @@ footer p:last-of-type {
   color: var(--overlay-text-colour)
 }
 
+.connect-page {
+  display: flex;
+  height: auto;
+  gap: 2.5rem;
+}
 
+.connect-page .social-links {
+  background-color: var(--button);
+  border: var(--btn-border-and-shadow) solid 3px;
+  box-shadow: 4px 4px 0px var(--btn-border-and-shadow);
+  color: var(--overlay-text-colour);
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  height: fit-content;
+  margin: auto;
+  padding: 1rem;
+  text-decoration: none;
+  color: var(--overlay-text-colour)
+}
 
 
 /* media queries start here */
@@ -391,6 +410,8 @@ footer p:last-of-type {
   .connect {
     display: block;
   }
+
+
 
   main {
     grid-template-columns: repeat(3, minmax(0, 1fr));
