@@ -397,6 +397,11 @@ footer p:last-of-type {
     gap: 1rem;
   }
 
+  footer a {
+    text-decoration: none;
+    color: var(--text-colour);
+  }
+
   footer p:nth-of-type(2) {
     display: inline;
   }
