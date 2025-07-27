@@ -360,8 +360,11 @@ footer p:last-of-type {
 
 .connect-page {
   display: flex;
-  height: auto;
+  flex-direction: column;
+  height: fit-content;
   gap: 2.5rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .connect-page .social-links {
@@ -373,7 +376,6 @@ footer p:last-of-type {
   cursor: pointer;
   text-align: center;
   height: fit-content;
-  margin: auto;
   padding: 1rem;
   text-decoration: none;
   color: var(--overlay-text-colour)
