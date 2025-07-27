@@ -117,7 +117,7 @@ nav li {
   box-shadow: 4px 4px 0px var(--btn-border-and-shadow);
   border: solid 3px var(--btn-border-and-shadow);
   border-radius: 5px;
-  padding: 0.6rem;
+  /* padding: 0.6rem; */
   text-decoration: none;
   cursor: pointer;
 }
@@ -136,6 +136,7 @@ nav li a {
   color: var(--text-colour);
   text-decoration: none;
   display: block;
+  padding: 0.6rem;
 }
 
 .connect {
