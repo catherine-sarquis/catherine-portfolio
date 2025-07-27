@@ -267,6 +267,11 @@ footer {
   text-align: center;
 }
 
+footer a {
+  text-decoration: none;
+  color: var(--text-colour);
+}
+
 footer p:nth-of-type(2) {
   display: none;
 }
